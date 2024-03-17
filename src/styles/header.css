@@ -1,0 +1,30 @@
+.brand-name {
+    src: url('../src/fonts/Roboto-Black.ttf');
+    font-size: 25px !important;
+}
+
+.nav-item {
+    font-size: 20px !important;
+    margin-right: 10px;
+    white-space: nowrap;
+    width: min-content;
+}
+
+.nav-item:hover {
+    box-shadow: 0 3px 0 0 var(--accent);
+    border-radius: 6px;
+    background: transparent;
+}
+
+#navigation-bar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.flag {
+    margin-top: 14px;
+    margin-bottom: 10px;
+    height: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+:root {
+    --accent: #542f2f;
+    --background: #111111;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-weight: 300;
+}
+
+body {
+    min-width: 600px;
+    color: white !important;
+    background-color: black !important;
+}
+
+.bg-gray {
+    background-color: var(--background);
+    position: relative;
+}
+
+.rounded-corners {
+    border-radius: 7px;
+}
+
+.section-font {
+    font-weight: 100;
+    font-size: 34pt;
+}
+
+.underline {
+    box-shadow: 0 3px 0 0 var(--accent);
+    border-radius: 10px;
+    background: transparent;
+}
+
+.section-header {
+    text-align: center;
+    padding-top: 12vh;
+    margin-bottom: 3vh;
+}
+
+.paragraph {
+    margin-top: 17px;
+}
+
+.about-txt {
+    min-width: 400px;
+}
+
+.sports-content {
+    text-align: center;
+    margin-bottom: 30px;
+}

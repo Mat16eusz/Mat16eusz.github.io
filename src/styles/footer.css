@@ -1,0 +1,49 @@
+.footer {
+    text-align: center;
+    margin-top: 150px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.arrow-to-up {
+    color: var(--accent);
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-70px);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.arrow-to-up:hover {
+    color: var(--accent);
+    animation-name: jumping;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 10;
+}
+
+@keyframes jumping {
+    0% {
+        transform: translateY(-70px);
+    }
+
+    8% {
+        transform: translateY(-55px);
+    }
+
+    24% {
+        transform: translateY(-85px);
+    }
+
+    32% {
+        transform: translateY(-70px);
+    }
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 17px;
+}

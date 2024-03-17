@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-200802830-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-200802830-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mateusz Jasiak, Android Developer and climber, rider downhill, personal webpage">
+    <meta name="keywords"
+        content="Mateusz Jasiak, Mateusz, Jasiak, mat16eusz, software, developer, Android Developer, AT Tarnów">
+    <meta name="author" content="Mateusz Jasiak - personal webpage">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <title>Mateusz Jasiak - personal webpage</title>
+
+
+    <!--------------------------------------- BOOTSTRAP & JQUERY --------------------------------------->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--------------------------------------- STYLES --------------------------------------------------->
+
+    <link href="../src/styles/style.css" rel="stylesheet">
+    <link href="../src/styles/particles.css" rel="stylesheet">
+    <link href="../src/styles/fonts.css" rel="stylesheet">
+    <link href="../src/styles/photo_gallery.css" rel="stylesheet">
+    <link href="../src/styles/social_icons.css" rel="stylesheet">
+    <link href="../src/styles/projects-panels.css" rel="stylesheet">
+    <link href="../src/styles/footer.css" rel="stylesheet">
+    <link href="../src/styles/jumbotron.css" rel="stylesheet">
+    <link href="../src/styles/header.css" rel="stylesheet">
+    <link href="../src/styles/achievement.css" rel="stylesheet">
+    <link href="../src/styles/webpage-loader.css" rel="stylesheet">
+
+    <!--------------------------------------- FONT AWESOME ICONS --------------------------------------->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!------------------------------------------- LOADER --------------------------------------------------->
+    <div class="webpage-loader">
+        <div class="lds-dual-ring"></div>
+    </div>
+
+    <!------------------------------------------- PARTICLES ------------------------------------------------>
+
+    <div id="particles-js"></div>
+
+    <!------------------------------------------- HEADER --------------------------------------------------->
+
+    <header id="navigation-bar">
+        <div class="container">
+            <nav class="navbar-dark navbar navbar-expand-lg">
+                <a class="navbar-brand brand-name no-decoration" href="#">Mateusz Jasiak</a>
+
+                <button class="navbar-toggler collapse-button" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link no-decoration" href="#about"><span class="text-nav-about-me"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-decoration" href="#socialmedia"><span
+                                    class="text-nav-links"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-decoration" href="#projects"><span
+                                    class="text-nav-projects"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-decoration" href="#sports"><span class="text-nav-sports"></span></a>
+                        </li>
+                        <li>
+                            <a class="nav-link no-decoration"> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-decoration" id="polish-btn">PL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-decoration" id="english-btn">EN</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="jumbo" id="about">
+            <div class="h5 text-muted lead"><span class="text-say-hi"></span></div>
+            <h1 class="my-name">Mateusz Jasiak</h1>
+            <div class="lead pt-4 performed-functions">
+                <span class="text-performed-functions"></span>
+            </div>
+        </div>
+
+        <!--------------------------------------- ABOUT ME ------------------------------------------------->
+
+        <div class="row bg-gray rounded-corners d-flex mt-5 p-4">
+            <div class="col">
+                <div class="card-body gallery">
+                    <div class="box">
+                        <img src="../src/photos/photo-1.jpg">
+                    </div>
+                    <div class="box">
+                        <img src="../src/photos/photo-2.jpg">
+                    </div>
+                    <div class="box">
+                        <img src="../src/photos/photo-3.jpg">
+                    </div>
+                    <div class="box">
+                        <img src="../src/photos/photo-4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="col about-txt mr-5 mt-3">
+                <div class="section-font">
+                    <span class="underline"><span class="text-about-me-prefix"></span></span><span
+                        class="text-about-me"></span>
+                </div>
+
+                <div class="paragraph lead">
+                    <span class="text-about-me-content-1"></span>
+                </div>
+
+                <div class="paragraph lead">
+                    <span class="text-about-me-content-2"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------------------- LINKS ---------------------------------------------------->
+
+        <h2 id="socialmedia" class="section-header section-font">
+            <span class="underline"><span class="text-links-prefix"></span></span><span class="text-links"></span>
+        </h2>
+        <div class="d-flex justify-content-center flex-wrap">
+            <div class="p-2">
+                <a class="link-facebook" target="_blank">
+                    <div class="social-icon"><i class="fab fa-facebook-f fa-3x"></i></div>
+                </a>
+            </div>
+            <div class="p-2">
+                <a class="link-instagram" target="_blank">
+                    <div class="social-icon"><i class="fab fa-instagram fa-3x"></i></div>
+                </a>
+            </div>
+            <div class="p-2">
+                <a class="link-github" target="_blank">
+                    <div class="social-icon"><i class="fab fa-github fa-3x"></i></div>
+                </a>
+            </div>
+            <div class="p-2">
+                <a class="link-linkedin" target="_blank">
+                    <div class="social-icon"><i class="fab fa-linkedin fa-3x"></i></div>
+                </a>
+            </div>
+        </div>
+
+        <!--------------------------------------- PROJECTS ------------------------------------------------->
+
+        <h2 id="projects" class="section-header section-font">
+            <span class="underline"><span class="text-projects-prefix"></span></span><span class="text-projects"></span>
+        </h2>
+        <div class="row">
+            <div class="col bg-gray rounded-corners m-3 project">
+                <a class="no-decoration link-mobile" target="_blank">
+                    <div class="project-content">
+                        <i class="fas fa-mobile fa-3x"></i>
+                        <p class="h4 mb-4 mt-4"><span class="text-project-1"></span></p>
+                        <span class="text-project-1-content"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col bg-gray rounded-corners m-3 project">
+                <a class="no-decoration link-snake" target="_blank">
+                    <div class="project-content">
+                        <i class="fas fa-desktop fa-3x"></i>
+                        <p class="h4 mb-4 mt-4"><span class="text-project-2"></span></p>
+                        <span class="text-project-2-content"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="w-100"></div>
+            <div class="col bg-gray rounded-corners m-3 project">
+                <a class="no-decoration link-climb" target="_blank">
+                    <div class="project-content">
+                        <i class="fas fa-hand-rock fa-3x"></i>
+                        <p class="h4 mb-4 mt-4"><span class="text-project-3"></span></p>
+                        <span class="text-project-3-content"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col bg-gray rounded-corners m-3 project">
+                <a class="no-decoration link-bike" target="_blank">
+                    <div class="project-content">
+                        <i class="fas fa-bicycle fa-3x"></i>
+                        <p class="h4 mb-4 mt-4"><span class="text-project-4"></span></p>
+                        <span class="text-project-4-content"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!--------------------------------------- SPORTS --------------------------------------------------->
+
+        <h2 id="sports" class="section-header section-font">
+            <span class="underline"><span class="text-sports-prefix"></span></span><span class="text-sports"></span>
+        </h2>
+        <div class="sports-content lead">
+            <span class="text-sports-content"></span>
+        </div>
+        <div class="d-flex justify-content-center flex-wrap">
+            <div class="p-2 m-3 bg-gray rounded-corners">
+                <div class="achievement">
+                    <div class="triangle-bottom"></div>
+                    <div class="triangle-top"></div>
+                    <div class="achievement-icon"><img src="../src/graphics/climb.png"
+                            style="height: 50px; filter: invert(1);"></div>
+                    <div class="caption"><span class="text-sport-desc-1"></span></div>
+                    <div class="value"><span class="text-sport-val-1"></span></div>
+                </div>
+            </div>
+            <div class="p-2 m-3 bg-gray rounded-corners">
+                <div class="achievement">
+                    <div class="triangle-bottom"></div>
+                    <div class="triangle-top"></div>
+                    <div class="achievement-icon">
+                        <p class="fas fa-biking fa-3x"></p>
+                    </div>
+                    <div class="caption"><span class="text-sport-desc-2"></span></div>
+                    <div class="value"><span class="text-sport-val-2"></span></div>
+                </div>
+            </div>
+            <div class="p-2 m-3 bg-gray rounded-corners">
+                <div class="achievement">
+                    <div class="triangle-bottom"></div>
+                    <div class="triangle-top"></div>
+                    <div class="achievement-icon">
+                        <p class="fas fa-route fa-3x"></p>
+                    </div>
+                    <div class="caption"><span class="text-sport-desc-3"></span></div>
+                    <div class="value"><span class="text-sport-val-3"></span></div>
+                </div>
+            </div>
+            <div class="p-2 m-3 bg-gray rounded-corners">
+                <div class="achievement">
+                    <div class="triangle-bottom"></div>
+                    <div class="triangle-top"></div>
+                    <div class="achievement-icon">
+                        <p class="fas fa-skiing fa-3x"></p>
+                    </div>
+                    <div class="caption"><span class="text-sport-desc-4"></span></div>
+                    <div class="value"><span class="text-sport-val-4"></span></div>
+                </div>
+            </div>
+            <div class="p-2 m-3 bg-gray rounded-corners">
+                <div class="achievement">
+                    <div class="triangle-bottom"></div>
+                    <div class="triangle-top"></div>
+                    <div class="achievement-icon">
+                        <p class="fas fa-running fa-3x"></p>
+                    </div>
+                    <div class="caption"><span class="text-sport-desc-5"></span></div>
+                    <div class="value"><span class="text-sport-val-5"></span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!------------------------------------------- FOOTER --------------------------------------------------->
+
+    <footer class="bg-gray footer">
+        <a href="#" class="arrow-to-up"><i class="fas fa-arrow-up fa-3x"></i></a>
+        <span class="footer-text">
+            <span class="text-muted">© <span class="text-all-rights"></span></span>
+        </span>
+    </footer>
+</body>
+
+</html>
+
+<!----------------------------------------------- SCRIPTS -------------------------------------------------->
+
+<script src="../src/scripts/loading-page.js"></script>
+<script src="../src/depedenties/particles/particles.js"></script>
+<script src="../src/depedenties/particles/app.js"></script>
+<script src="../src/scripts/scroll-header.js"></script>
+<script src="../src/scripts/load-languages.js"></script>
+<script src="../src/scripts/load-links.js"></script>
+<script src="../src/scripts/on-load.js"></script>

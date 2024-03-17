@@ -1,0 +1,66 @@
+.achievement {
+    width: 150px;
+    height: 230px;
+    padding-top: 15px;
+    padding-bottom: 190px;
+    text-align: center;
+}
+
+.achievement-icon {
+    position: absolute;
+    width: 91%;
+    margin-top: 15px;
+    z-index: 2;
+}
+
+.achievement>.triangle-right {
+    position: absolute;
+}
+
+.achievement>.caption {
+    padding-top: 90px;
+    font-size: 1.1rem;
+    line-height: 21px;
+}
+
+.achievement>.value {
+    margin-top: 7px;
+    font-size: 30px;
+}
+
+.achievement>.triangle-bottom {
+    position: absolute;
+    z-index: 1;
+    border-top: 80px solid transparent;
+    border-left: 80px solid var(--accent);
+    margin-left: 35px;
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.achievement>.triangle-top {
+    position: absolute;
+    z-index: 1;
+    border-bottom: 0 solid transparent;
+    border-right: 0px solid var(--accent);
+    padding-left: 70px;
+    margin-left: 45px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/* ---------------------------------------------- ANIMATION ------------------------------------ */
+
+.achievement:hover>.triangle-bottom {
+    border-top: 0px solid transparent;
+    border-left: 0px solid var(--accent);
+    margin-top: 80px;
+    opacity: 1;
+}
+
+.achievement:hover>.triangle-top {
+    border-bottom: 60px solid transparent;
+    border-right: 60px solid var(--accent);
+    padding-left: 10px;
+    opacity: 1;
+}
